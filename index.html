@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fernanda Humeres - Diseñadora Gráfica</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>FERNANDA HUMERES</h1>
+            <p>Diseñadora Gráfica & Visual</p>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <a href="index.html">Portafolio</a>
+            <a href="about.html">Sobre mí</a>
+        </nav>
+
+        <!-- Gallery -->
+        <section class="gallery">
+            <div class="gallery-grid" id="portafolio"></div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2025 Fernanda Humeres. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#">Behance</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </footer>
+    </div>
+    <script src="portafolio.js"></script>
+    <script>
+  const links = document.querySelectorAll("nav a");
+  const currentURL = window.location.href;
+
+  links.forEach(link => {
+    if (link.href === currentURL) {
+      link.classList.add("active");
+    }
+  });
+</script>
+</body>
+</html>
